@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa1042a5cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><h4><a href="#header">Home</a></h4></li>
+                    <li><h4><a href="#about">About</a></h4></li>
+                    <li><h4><a href="#services">Services</a></h4></li>
+                    <li><h4><a href="#portfolio">Portfolio</a></h4></li>
+                    <li><h4><a href="#contact">Contact</a></h4></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Enthusiast</p>
+                <h1>Hi, I' m <span>Kaushal </span> <br>Sharma from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ..........about......... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2023-07-25 at 23.50.46.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> My Name is Kaushal Sharma , currently persuing my BTech from Bharati Vidyapeeth College of Engineering 
+                        from Electronics and Communication branch . <br>
+                         Extremely motivated to constantly develop my skills and grow professionally. Tech-savvy, with the aptitude to ramp up on
+                        new system and process quickly. Always excited and eager to learn new things and ways to implement them to the real
+                        scenario. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+        
+                            <li><span>Web Development </span><br>Web App Development</li>
+                            <li><span>C++ </span><br>Do DSA through C++ language</li>
+                            <li><span>C </span><br>proficient in  C language</li>
+                            <li><span>JavaScipt </span><br>use JavaScipt as a frontend language in web development</li>
+                            <li><span>Problem Solver </span><br>Solve 350+ coding  problems across various platforms</li>
+
+                           
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July ,2022-September, 2022</span><br>Summer Intern  At ScoreMe Solutions Pvt Ltd</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 </span><br>Designing Web/App Training from Shapemyskills</li>
+                            <li><span> 2024 </span><br>B-tech From Bharati Vidyapeeth College of Engineering</li>
+                            <li><span> 2020</span><br>Schooling From Maharaja Agrasen Mode School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- ..................services.......... -->
+
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                
+                <h2>Web Development</h2>
+                <p>Experienced front-end developer adept in HTML, CSS, and JavaScript. Passionate about creating user-friendly interfaces and staying updated with industry trends. 
+                    Committed to delivering polished solutions that optimize user engagement.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Problem solver</h2>
+                <p>Dedicated problem solver experienced in handling Data Structures and Algorithms (DSA) challenges on platforms like LeetCode, having  <h3><strong>solved over 300 problems across different coding platforms</strong></h3>. Continuously learning and 
+                    applying analytical skills to craft efficient and effective solutions for complex programming tasks.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Passionate about crafting responsive website designs using HTML and CSS. Committed to delivering professional and user-centric experiences. 
+                    Constantly honing skills and following industry best practices for exceptional results.
+                    I have completed a <h4>comprehensive web design course from ShapeMySkills</h4> , further enhancing my skill set 
+                    and knowledge in creating dynamic and visually appealing websites.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- 
+ ..............portfolio......... -->
+
+ <div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.webp" alt="">
+                <div class="layer">
+                    <h3>Quiz Application</h3>
+                    <p>A React.js based quiz website with real-time feedback, user authentication, 
+                        and a time-bound engaging quiz experience.
+                         Dive into an engaging quiz app powered by the latest web technologies. With HTML, CSS,
+                         and JavaScript, I’ve crafted a visually appealing and interactive user
+                          interface. Leveraging the power of React.js for seamless front-end
+                        interactions.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>HTML & CSS Music Player . build a music player using HTML CSS and js. 
+                        This music player will have all the features found in a typical music player.
+                         You will be able to add, play, pause and seek songs that have been added.</p>
+                    <a href="https://kaushal3468.github.io/music_player/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.webp" alt="">
+                <div class="layer">
+                    <h3>Action Game </h3>
+                    <p>Game development in JavaScript (created a game website using HTML, CSS and JavaScript): 
+                        This game also have point counter which count the score of the player .</p>
+                    <a href="https://kaushal3468.github.io/action_game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+ <!-- --------contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sharmakaushal3468@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-9311580230</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kaushal-sharma-8b5593224/s"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kaushal3468"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+                    <a href="https://leetcode.com/sharma_kaushal3468/"><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Namee" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kaushal Website</p>
+    </div>
+ </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+
+         
+
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbziDL_vuaQqUvmYuxsQarUSjrdq6v2D9oYyxHfx7JSKJ-YXt4IINFpE6kUTcr15Xt_Bug/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
